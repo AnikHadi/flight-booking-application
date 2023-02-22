@@ -8,7 +8,7 @@ Redux Project Flight Booking Application
 
 ## Documentation
 
-[Live Project](https://linktodocumentation)
+[Live Project](https://radiant-moonbeam-99bfde.netlify.app)
 
 ## How to run
 
@@ -19,13 +19,13 @@ Please follow the below instructions to run this project in your machine:
 - Clone this repository -
 
 ```bash
-  git clone https://github.com/HadiAnik/think-in-a-redux-way
+  git clone https://github.com/HadiAnik/
 ```
 
 - Go to the cloned project directory
 
 ```bash
-  cd think-in-a-redux-way
+  cd flight-booking-application
 ```
 
 - Install dependencies
