@@ -19,7 +19,7 @@ Please follow the below instructions to run this project in your machine:
 - Clone this repository -
 
 ```bash
-  git clone https://github.com/HadiAnik/
+  git clone https://github.com/Learn-with-Sumit/batch-2---assignment-2---flight-booking-HadiAnik.git
 ```
 
 - Go to the cloned project directory

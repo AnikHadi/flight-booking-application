@@ -5,16 +5,24 @@ import { setFlightBook } from "../../redux/fliteBooking/action";
 import "./InputSection.css";
 
 export default function InputSection() {
-  const { register, handleSubmit } = useForm();
+  const { register, handleSubmit, reset } = useForm();
   const flight = useSelector((state) => state);
   const dispatch = useDispatch();
 
   const onSubmit = (data) => {
+    const lastObject = flight.booking[flight.booking.length - 1];
+    let newId = 0;
+    if (lastObject === undefined) {
+      newId = 1;
+    } else {
+      newId = lastObject.id + 1;
+    }
     const newData = {
       ...data,
-      id: flight.booking.length + 1,
+      id: newId,
     };
     dispatch(setFlightBook(newData));
+    reset();
   };
 
   return (

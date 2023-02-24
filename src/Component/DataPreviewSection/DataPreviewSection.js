@@ -7,8 +7,12 @@ const DataPreviewSection = (props) => {
   const { from, to, date, guests, ticketClass, id } = props.flight;
 
   const deleteBtnHandler = (id) => {
-    console.log(id);
-    dispatch(deleteFlightBook(id));
+    const confirmation = window.confirm(
+      "Are You sure want to delete this booking?"
+    );
+    if (confirmation) {
+      dispatch(deleteFlightBook(id));
+    }
   };
   return (
     <tbody className="divide-y divide-gray-300/20" id="lws-previewBooked">
